@@ -2,6 +2,11 @@
   "name": "content-vue",
   "version": "0.0.0",
   "private": true,
+  "main": "bin/index.js",
+  "type": "module",
+  "bin": {
+    "content-vue-cli": "./bin/index.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,6 +15,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "contentful": "^10.5.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {
